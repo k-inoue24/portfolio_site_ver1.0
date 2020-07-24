@@ -160,7 +160,6 @@
                 <div></div>
             </div>
             <div class="prices_acd" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
-
                 <p class="price"><a id="price_button" class="prices_head"><i class="fas fa-chevron-circle-down"></i> 各制作の費用感はこちら <i class="fas fa-chevron-circle-down"></i></a></p>
                 <div class="prices" id="price">
                     <div class="table_container" align="center">
@@ -467,7 +466,7 @@
                             <p class="works_explain_detail">Vue.jsを使用し、簡易Webアプリケーションを制作。</p>
                             <p><span class="works_title">担当</span><span class="works_text">Webデザイン/コーディング</span></p>
                             <p><span class="works_title">使用スキル</span><span class="works_text">Vue.js/gulp.js/HTML5/CSS3(SCSS)</span></p>
-                            <p><span class="works_title">URL</span><span class="works_text"><a href="https://inocchi46.github.io/sakamichi-songs/" target="_blank">https://inocchi46.github.io/sakamichi-songs/ <i class="fas fa-external-link-alt"></i></a></span></p>
+                            <p><span class="works_title">URL</span><span class="works_text"><a href="https://k-inoue24.github.io/sakamichi-songs/" target="_blank">https://inocchi46.github.io/sakamichi-songs/ <i class="fas fa-external-link-alt"></i></a></span></p>
                         </div>
                     </div>
                 </div>
