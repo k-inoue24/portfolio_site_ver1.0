@@ -21,7 +21,7 @@
     <header id="header">
         <div class="container">
             <div class="header_left">
-						<h1><a href="#top">Keita Inoue</a><span>Web Engineer's portfolio</span></h1>
+              <h1><a href="#top">Keita Inoue</a><span>Web Engineer's portfolio</span></h1>
             </div>
             <div class="header_right">
                 <nav>
@@ -505,14 +505,11 @@
     </footer>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bgswitcher.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.polyfills.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/wow.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.tabslet.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.typist.js"></script>
     <script>
@@ -540,11 +537,9 @@
             });
         }
         new AOS.init({
-            duration: 1000,
-			once: true,
-
+          duration: 1000,
+          once: true,
         });
-        new WOW().init();
         $('.animation').css('visibility', 'hidden');
         $(window).scroll(function() {
             var windowHeight = $(window).height(),
@@ -582,7 +577,7 @@
             }
         });
     }
-}());
+  }());
         window.addEventListener('load', scrollAnimationFunc);
         window.addEventListener('scroll', scrollAnimationFunc);
         var mySwiper = new Swiper('.swiper-container', {

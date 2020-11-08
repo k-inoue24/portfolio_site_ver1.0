@@ -228,9 +228,6 @@ header .container {
     padding: 0 26px !important;
 }
 
-header .header_left {
-}
-
 header .header_left a {
     display: inline-block;
     letter-spacing: 0;
@@ -244,9 +241,6 @@ header .header_left span {
     margin-left: 16px;
     color: #666;
     font-size: 16px;
-}
-
-header .header_right {
 }
 
 header .header_right nav ul{
@@ -718,8 +712,14 @@ header .header_right nav li a:hover::after {
     font-weight: bold;
     display: inline-block;
     color: rgba(120, 50, 52, 0.9);
-    padding: 10px 20px;
+    padding: 8px 20px 6px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
+.about .horizontal li a:not(.active):hover {
+  background-color: rgba(248, 214, 215, 0.8);
+}
+
 
 .about .horizontal .active {
     background-color: rgba(120, 50, 52, 0.9);
