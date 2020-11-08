@@ -1617,7 +1617,7 @@ header .header_right nav li a:hover::after {
 /* contact */
 
 .contact {
-    height: 1070px;
+    min-height: 970px;
     color: #1f1f1f;
     background-color: #f3f5f5;
     padding: 60px 0 30px;
@@ -1725,6 +1725,14 @@ header .header_right nav li a:hover::after {
     color: #000;
     text-decoration: underline;
 }
+
+/* バリデーションスタイル設定 */
+.contact span.wpcf7-not-valid-tip {
+  max-width: 622px;
+  margin: -16px auto 15px;
+}
+
+
 @media (min-width: 768px) {
 	.contact .return-btn:hover {
 		color: #fff;
@@ -1743,9 +1751,6 @@ header .header_right nav li a:hover::after {
 }
 
 @media (max-width: 991px) {
-    .contact {
-        height: 1040px;
-    }
     .contact .reply {
         font-size: 13px;
         margin: 60px 0 40px;
@@ -1753,9 +1758,6 @@ header .header_right nav li a:hover::after {
 }
 
 @media (max-width: 768px) {
-    .contact {
-        height: 1000px;
-    }
     .contact .welcome {
         font-size: 14px;
         line-height: 1.7;
@@ -1775,12 +1777,13 @@ header .header_right nav li a:hover::after {
     .contact .reply {
         margin: 40px 0;
     }
+    .contact span.wpcf7-not-valid-tip {
+      max-width: calc(90% + 20px);
+    }
+
 }
 
 @media (max-width: 600px) {
-    .contact {
-        height: 960px;
-    }
     .contact input::placeholder {
         font-size: 13px!important;
     }
@@ -1798,11 +1801,13 @@ header .header_right nav li a:hover::after {
         width: 184px;
         font-size: 13px;
     }
+    .contact span.wpcf7-not-valid-tip {
+      margin-top: -6px;
+    }
 }
 
 @media (max-width: 480px) {
     .contact {
-        height: 846px;
         padding: 40px 0 30px;
     }
     .contact .container {
@@ -1823,13 +1828,11 @@ header .header_right nav li a:hover::after {
 }
 
 @media (max-width: 350px) {
-    .contact {
-        height: 870px;
-    }
     .contact .br_sp {
         display: block !important;
     }
 }
+
 
 
 /* link */
