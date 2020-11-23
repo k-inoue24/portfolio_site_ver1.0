@@ -61,46 +61,44 @@
             </div>
         </div>
     </div>
-    <div id="app">
-        <div class="about" id="about">
-            <div class="container">
-                <h2 id="about_title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="bottom-bottom">ABOUT<span>-自己紹介-</span></h2>
-                <div id="work" v-show="isActive === '1'">
-                    <div class="flex">
-                        <div class="flex_image" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
-                            <img class="profile_image" src="<?php echo get_template_directory_uri(); ?>/img/profile-work.jpg" alt="KeitaInoue">
-                        </div>
-                        <div class="flex_text" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
-                            <p>フリーランスWebエンジニアとして活動している井上恵太と申します。<br> 専門はWEBサイト制作全般です。</p>
-                            <ul>
-											<li><i class="fas fa-caret-right"></i> 細かいヒアリングを経てのデザイン設計</li>
-											<li><i class="fas fa-caret-right"></i> 品質向上のための技術的提案</li>
-											<li><i class="fas fa-caret-right"></i> SEOを考慮したコーディング</li>
-											<li><i class="fas fa-caret-right"></i> サイト訪問者を惹きつけるモダンな実装</li>
-											<li><i class="fas fa-caret-right"></i> 制作後のサイト運用/保守</li>
-                            </ul>
-                            <p>一番の目的は、依頼者様が手がけるサービスにより良い結果をもたらすことです。<br> その手段として、ご要望以上のWEBサイト制作に尽力していきます。</p>
-                        </div>
+    <div class="about" id="about">
+        <div class="container">
+            <h2 id="about_title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="bottom-bottom">ABOUT<span>-自己紹介-</span></h2>
+            <div class="modeSection" id="work">
+                <div class="flex">
+                    <div class="flex_image" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
+                        <img class="profile_image" src="<?php echo get_template_directory_uri(); ?>/img/profile-work.jpg" alt="KeitaInoue">
+                    </div>
+                    <div class="flex_text" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
+                        <p>フリーランスWebエンジニアとして活動している井上恵太と申します。<br> 専門はWEBサイト制作全般です。</p>
+                        <ul>
+                  <li><i class="fas fa-caret-right"></i> 細かいヒアリングを経てのデザイン設計</li>
+                  <li><i class="fas fa-caret-right"></i> 品質向上のための技術的提案</li>
+                  <li><i class="fas fa-caret-right"></i> SEOを考慮したコーディング</li>
+                  <li><i class="fas fa-caret-right"></i> サイト訪問者を惹きつけるモダンな実装</li>
+                  <li><i class="fas fa-caret-right"></i> 制作後のサイト運用/保守</li>
+                        </ul>
+                        <p>一番の目的は、依頼者様が手がけるサービスにより良い結果をもたらすことです。<br> その手段として、ご要望以上のWEBサイト制作に尽力していきます。</p>
                     </div>
                 </div>
-                <div id="life" v-show="isActive === '2'">
-                    <div class="flex">
-                        <div class="flex_image" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
-                            <img class="profile_image" src="<?php echo get_template_directory_uri(); ?>/img/profile-life.jpg" alt="KeitaInoue">
-                        </div>
-                        <div class="flex_text" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
-                            <p>東京と東南アジア諸国を拠点に生活しています。<br> トップを飾っている背景画像は、タイ・チェンマイの伝統行事『コムローイ祭り』にて撮影したものです。</p>
-                            <p>場所と時間に縛られない生活をしているメリットを生かし、お客様からのご連絡には迅速に対応させていただいています。<br>ご所望であれば、直接対面での打ち合わせにも可能な限り応じる所存です。</p>
-                            <p>いつでもお気軽に<a class="everytime" href="#contact">お問い合わせ</a>ください。</p>
-                        </div>
-                    </div>
-                </div>
-                <ul class="horizontal"  data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
-                    <span class="mode_switch">・MODE SWITCH・</span>
-                    <li><a id="work_btn" v-on:click="profileChange('1')" v-bind:class="{'active': isActive === '1'}">WORK</a></li>
-                    <li><a id="life_btn" v-on:click="profileChange('2')" v-bind:class="{'active': isActive === '2'}">LIFE</a></li>
-                </ul>
             </div>
+            <div class="modeSection" id="life">
+                <div class="flex">
+                    <div class="flex_image" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
+                        <img class="profile_image" src="<?php echo get_template_directory_uri(); ?>/img/profile-life.jpg" alt="KeitaInoue">
+                    </div>
+                    <div class="flex_text" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0" data-aos-anchor-placement="center-bottom">
+                        <p>東京と東南アジア諸国を拠点に生活しています。<br> トップを飾っている背景画像は、タイ・チェンマイの伝統行事『コムローイ祭り』にて撮影したものです。</p>
+                        <p>場所と時間に縛られない生活をしているメリットを生かし、お客様からのご連絡には迅速に対応させていただいています。<br>ご所望であれば、直接対面での打ち合わせにも可能な限り応じる所存です。</p>
+                        <p>いつでもお気軽に<a class="everytime" href="#contact">お問い合わせ</a>ください。</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="horizontal"  data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
+                <span class="mode_switch">・MODE SWITCH・</span>
+                <li><a class="active" id="work_btn" data-target="work">WORK</a></li>
+                <li><a id="life_btn" data-target="life">LIFE</a></li>
+            </ul>
         </div>
     </div>
     <div class="service" id="service">
@@ -225,8 +223,7 @@
     <div class="works" id="works">
         <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="bottom-bottom">WORKS<span>-制作実績-</span></h2>
         <div>
-            <p class="works_introduction" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">制作実績の一部を掲載しています。<br class="works_br_sp">各キャプチャ画像をスクロールしてご確認ください。
-</p>
+            <p class="works_introduction" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">制作実績の一部を掲載しています。<br class="works_br_sp">各キャプチャ画像をスクロールしてご確認ください。</p>
             <div class="swiper-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-anchor-placement="top-center">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -504,7 +501,6 @@
         Copyright &copy; Keita Inoue All Rights Reserved.
     </footer>
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -512,142 +508,25 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/smooth-scroll.polyfills.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.tabslet.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.typist.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
     <script>
-        new Vue({
-            el: '#app',
-            data: {
-                isActive: '1'
-            },
-            methods: {
-                profileChange: function(num) {
-                    this.isActive = num
-                }
-            }
-        })
-        jQuery(window).on('load', function() {
-            jQuery('#loader_bg').fadeOut(400);
-        });
-        window.onload = function() {
-            jQuery(function($) {
-                $('.top_name')
-                    .typist({
-                        speed: 7
-                    })
-                    .typistAdd('Keita Inoue')
-            });
-        }
-        new AOS.init({
-          duration: 1000,
-          once: true,
-        });
-        $('.animation').css('visibility', 'hidden');
-        $(window).scroll(function() {
-            var windowHeight = $(window).height(),
-                topWindow = $(window).scrollTop();
-            $('.animation').each(function() {
-                var targetPosition = $(this).offset().top;
-                if (topWindow > targetPosition - windowHeight + 100) {
-                    $(this).addClass("fadeInDown");
-                }
-            });
-        });
-        var scrollAnimationElm = document.querySelectorAll('.sa');
-        var scrollAnimationFunc = function() {
-            for (var i = 0; i < scrollAnimationElm.length; i++) {
-                var triggerMargin = 200;
-                if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-                    scrollAnimationElm[i].classList.add('show');
-                }
-            }
-        }
-        (function() {
-    'use strict';
-
-    var acdHeads;
-    acdHeads = document.querySelectorAll('.price');
-    for (var i = 0; i < acdHeads.length; i++) {
-        acdHeads[i].addEventListener('click', function() {
-            var acdBody;
-            acdBody = this.nextElementSibling;
-            acdBody.style.transition = 'height 0.3s ease-out';
-            if (acdBody.style.height) {
-                acdBody.style.height = null;
-            } else {
-                acdBody.style.height = acdBody.scrollHeight + 'px';
-            }
-        });
-    }
-  }());
-        window.addEventListener('load', scrollAnimationFunc);
-        window.addEventListener('scroll', scrollAnimationFunc);
-        var mySwiper = new Swiper('.swiper-container', {
-            effect: "flip",
-            loop: true,
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-        })
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            header: '#header',
-            speed: 800,
-        });
-        $('.tabs_animate').tabslet({
-            mouseevent: 'click',
-            attribute: 'href',
-            animation: true
-        });
-        var position = $("#about_title").offset().top;
-        $("#work_btn,#life_btn").click(function() {
-            $("html,body").animate({
-                scrollTop: position
-            }, {
-                queue: false
-            });
-        });
-        $(function() {
-            $('.toggle').click(function() {
-                $('body').toggleClass('open');
-                $('.menu').fadeIn();
-            });
-        });
-        $(function() {
-            $('.menu').click(function() {
-                $('.menu').fadeOut();
-                $('body').removeClass('open');
-            });
-        });
-        document.addEventListener('wpcf7mailsent', function(event) {
-            location = 'https://inouekeita.work/thanks-page';
-        }, false);
-    </script>
-    <script>
-        if (window.matchMedia("(max-width: 480px)").matches) {
-            jQuery(function($) {
-                $('.top').bgSwitcher({
-                    images: ['<?php echo get_template_directory_uri(); ?>/img/top-image1-sp.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image2-sp.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image1-sp.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image3-sp.jpg'],
-                    interval: 5000,
-                    loop: true,
-                    shuffle: false,
-                    effect: "fade",
-                    duration: 2000,
-                    easing: "linear"
-                });
-            });
-        } else {
-            jQuery(function($) {
-                $('.top').bgSwitcher({
-                    images: ['<?php echo get_template_directory_uri(); ?>/img/top-image1.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image2.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image1.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image3.jpg'],
-                    interval: 4900,
-                    loop: true,
-                    shuffle: false,
-                    effect: "fade",
-                    duration: 2000,
-                    easing: "linear"
-                });
-            });
-        }
+      // KV切替
+      $(function(){
+          $('.top').bgSwitcher({
+              images: ['<?php echo get_template_directory_uri(); ?>/img/top-image1.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image2.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image1.jpg', '<?php echo get_template_directory_uri(); ?>/img/top-image3.jpg'],
+              interval: 4900,
+              loop: true,
+              shuffle: false,
+              effect: "fade",
+              duration: 2000,
+              easing: "linear"
+          });
+      });
+      // フォーム送信→完了画面遷移
+      document.addEventListener('wpcf7mailsent', function(event) {
+        location = 'https://inouekeita.work/thanks-page';
+      }, false);
     </script>
     <?php wp_footer(); ?>
 </body>
-
 </html>
